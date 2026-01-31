@@ -15,7 +15,7 @@
 	```
 4. How would you implement user-specific access control for S3 objects in a production environment?
 5. Are you using api gateway in architeccture or alb?
-	```bash
+```bash
  I choose between API Gateway and Application Load Balancer based on the type of traffic and responsibilities in the architecture. In many cases, I use both together.
 ```
 6. How do you perform Linux server patching in a production environment while minimizing downtime and risk?
@@ -51,12 +51,13 @@ Documented the incident with a post-mortem
 Result:
 
 “Since implementing these changes, we’ve avoided similar outages and reduced deployment-related risk significantly.”
-	```
+```
 8. write jenkins pipeline?
 
 
 9. why are you using multiple tools for monitoring (elk, prometheus and grafana)?
-	Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
-	
-10. what is crontab?
-11. can you wrtite shell script and python script for automation?
+``bash
+Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
+```	
+11. what is crontab?
+12. can you wrtite shell script and python script for automation?
