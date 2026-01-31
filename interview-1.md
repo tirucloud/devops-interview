@@ -15,8 +15,10 @@
 	```
 4. How would you implement user-specific access control for S3 objects in a production environment?
 5. Are you using api gateway in architeccture or alb?
+
 ```bash
- I choose between API Gateway and Application Load Balancer based on the type of traffic and responsibilities in the architecture. In many cases, I use both together.
+ I choose between API Gateway and Application Load Balancer based on the type of traffic and responsibilities in the architecture.
+In many cases, I use both together.
 ```
 6. How do you perform Linux server patching in a production environment while minimizing downtime and risk?
 7. In your experience, what has been the maximum application downtime, and how was it handled?
