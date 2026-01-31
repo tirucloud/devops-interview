@@ -61,5 +61,5 @@ Result:
 ```bash
 Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
 ```
-11. what is crontab?
-12. can you wrtite shell script and python script for automation?
+10. what is crontab?
+11. can you wrtite shell script and python script for automation?
