@@ -7,7 +7,7 @@
 4. How would you implement user-specific access control for S3 objects in a production environment?
 5. Are you using api gateway in architeccture or alb?
 ```bash
- I choose between API Gateway and Application Load Balancer based on the type of traffic and responsibilities in the architecture.
+ we are using API Gateway and Application Load Balancer based on the type of traffic and responsibilities in the architecture.
 In many cases, I use both together.
 ```
 6. How do you perform Linux server patching in a production environment while minimizing downtime and risk?
@@ -86,5 +86,5 @@ Using ELK, Prometheus, and Grafana together gives us full observability—metric
 12. can you write shell script and python script for automation?
 13. can you install and setup jenkins from the scratch?
 14. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
-15. s3 storage tiers and lifecycle rules?
+15. Explain s3 storage tiers and lifecycle rules?
 
