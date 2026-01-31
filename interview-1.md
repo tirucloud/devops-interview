@@ -1,4 +1,4 @@
-## interview-1
+## interview-1- cloud/devops engineer role
 
 
 1. How do you decide the number of target groups to configure for an Application Load Balancer?
@@ -78,14 +78,15 @@ pipeline {
             }
         }
 }
-
-
 ```
-
-
 10. why are you using multiple tools for monitoring (elk, prometheus and grafana)?
 ```bash
 Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
 ```
-10. what is crontab?
-11. can you wrtite shell script and python script for automation?
+11. what is crontab? how to scedule a job in linux?
+12. can you write shell script?
+13. can you write python script for automation?
+14. can you install and setup jenkins from the scratch?
+15. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
+16. s3 storage tiers and lifecycle rules?
+17. 
