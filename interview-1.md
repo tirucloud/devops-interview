@@ -73,7 +73,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    clone("https://github.com/tirucloud/tws-e-commerce-app_hackathon.git","master")
+                    clone("https://github.com/.........","master")
                 }
             }
         }
