@@ -6,7 +6,6 @@
 3. Can you explain the end-to-end flow of a user request, starting from accessing an application URL to how the request reaches and interacts with the database?
 4. How would you implement user-specific access control for S3 objects in a production environment?
 5. Are you using api gateway in architeccture or alb?
-
 ```bash
  I choose between API Gateway and Application Load Balancer based on the type of traffic and responsibilities in the architecture.
 In many cases, I use both together.
@@ -84,9 +83,8 @@ pipeline {
 Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
 ```
 11. what is crontab? how to scedule a job in linux?
-12. can you write shell script?
-13. can you write python script for automation?
-14. can you install and setup jenkins from the scratch?
-15. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
-16. s3 storage tiers and lifecycle rules?
-17. 
+12. can you write shell script and python script for automation?
+13. can you install and setup jenkins from the scratch?
+14. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
+15. s3 storage tiers and lifecycle rules?
+
