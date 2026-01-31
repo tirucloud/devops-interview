@@ -4,7 +4,7 @@
 1. How do you decide the number of target groups to configure for an Application Load Balancer?
 2. How many target groups are typically configured behind an Application Load Balancer?
 3. Can you explain the end-to-end flow of a user request, starting from accessing an application URL to how the request reaches and interacts with the database?
-	```bash
+```bash
 	How is authentication handled in this flow?
 
 	Where does caching fit in?
@@ -12,7 +12,7 @@
 	How is database connection pooling managed?
 
 	What happens if the database is temporarily unavailable?
-	```
+```
 4. How would you implement user-specific access control for S3 objects in a production environment?
 5. Are you using api gateway in architeccture or alb?
 
@@ -58,8 +58,8 @@ Result:
 
 
 9. why are you using multiple tools for monitoring (elk, prometheus and grafana)?
-``bash
+```bash
 Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
-``
+```
 11. what is crontab?
 12. can you wrtite shell script and python script for automation?
