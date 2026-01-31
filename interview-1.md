@@ -4,15 +4,6 @@
 1. How do you decide the number of target groups to configure for an Application Load Balancer?
 2. How many target groups are typically configured behind an Application Load Balancer?
 3. Can you explain the end-to-end flow of a user request, starting from accessing an application URL to how the request reaches and interacts with the database?
-```bash
-	How is authentication handled in this flow?
-
-	Where does caching fit in?
-
-	How is database connection pooling managed?
-
-	What happens if the database is temporarily unavailable?
-```
 4. How would you implement user-specific access control for S3 objects in a production environment?
 5. Are you using api gateway in architeccture or alb?
 
