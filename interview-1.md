@@ -55,9 +55,42 @@ Result:
 “Since implementing these changes, we’ve avoided similar outages and reduced deployment-related risk significantly.”
 ```
 8. write jenkins pipeline?
+```bash
+@Library('Shared') _
+
+pipeline {
+    agent any
+    
+    environment {
+        // Update the main app image name to match the deployment file
+        DOCKER_IMAGE_NAME = 'tirucloud/easyshop-app'
+        DOCKER_MIGRATION_IMAGE_NAME = 'tirucloud/easyshop-migration'
+        DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
+        GITHUB_CREDENTIALS = credentials('github-credentials')
+        GIT_BRANCH = "master"
+    }
+    
+    stages {
+        stage('Cleanup Workspace') {
+            steps {
+                script {
+                    clean_ws()
+                }
+            }
+        }
+        
+        stage('Clone Repository') {
+            steps {
+                script {
+                    clone("https://github.com/tirucloud/tws-e-commerce-app_hackathon.git","master")
+                }
+            }
+        }
+
+```
 
 
-9. why are you using multiple tools for monitoring (elk, prometheus and grafana)?
+10. why are you using multiple tools for monitoring (elk, prometheus and grafana)?
 ```bash
 Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis, and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
 ```
