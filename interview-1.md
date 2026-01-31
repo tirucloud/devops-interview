@@ -54,7 +54,7 @@ Result:
 
 “Since implementing these changes, we’ve avoided similar outages and reduced deployment-related risk significantly.”
 ```
-8. write jenkins pipeline?
+8. Can you walk us through a sample Jenkins pipeline that you implemented in your project?
 ```bash
 @Library('Shared') _
 
