@@ -81,7 +81,8 @@ pipeline {
 10. why are you using multiple tools for monitoring (elk, prometheus and grafana)?
 ```bash
 Using ELK, Prometheus, and Grafana together gives us full observability—metrics for detection, logs for diagnosis,
-and dashboards for visibility.Because no single tool covers logs, metrics, and visualization end-to-end. Each tool solves a different observability problem.
+and dashboards for visibility.Because no single tool covers logs, metrics, a
+nd visualization end-to-end. Each tool solves a different observability problem.
 ```
 11. what is crontab? how to scedule a job in linux?
 12. can you write shell script and python script for automation?
