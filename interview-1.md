@@ -14,11 +14,13 @@ In many cases, I use both together.
 7. In your experience, what has been the maximum application downtime, and how was it handled?
 ```bash
 
-“In my experience, the maximum application downtime was around 20–25 minutes during a production incident.”
+“In my experience, the maximum application downtime was around 20–25 minutes
+during a production incident.”
 
 What happened:
 
-“It was caused by a failed deployment combined with an unexpected dependency issue, which led to application pods becoming unhealthy.”
+“It was caused by a failed deployment combined with an unexpected dependency issue,
+which led to application pods becoming unhealthy.”
 
 How it was handled:
 
@@ -42,7 +44,8 @@ Documented the incident with a post-mortem
 
 Result:
 
-“Since implementing these changes, we’ve avoided similar outages and reduced deployment-related risk significantly.”
+“Since implementing these changes, we’ve avoided similar outages and reduced
+deployment-related risk significantly.”
 ```
 8. Can you walk us through a sample Jenkins pipeline that you implemented in your project?
 ```bash
