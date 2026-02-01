@@ -86,7 +86,7 @@ Using ELK, Prometheus, and Grafana together gives us full observability—metric
 and dashboards for visibility.Because no single tool covers logs, metrics, a
 nd visualization end-to-end. Each tool solves a different observability problem.
 ```
-11. what is crontab? how to scedule a job in linux?
+11. what is crontab? how to schedule a job in linux?
 12. can you write shell script and python script for automation?
 13. can you install and setup jenkins from the scratch?
 14. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
