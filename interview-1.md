@@ -24,7 +24,7 @@ deployment strategies like blue-green or canary.
 ```
 ### 3. Can you explain the end-to-end flow of a user request, starting from accessing an application URL to how the request reaches and interacts with the database?
 ```bash
-user -- url -- aplb -- traget group -- front end --- backend -- DB
+user -- url -- alb -- traget group -- front end --- backend -- DB
 ```
 ### 4. How would you implement user-specific access control for S3 objects in a production environment?
 ```
