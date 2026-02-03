@@ -2,14 +2,85 @@
 
 
 1. How do you decide the number of target groups to configure for an Application Load Balancer?
+```
+You don’t decide a number upfront — you decide based on application boundaries.
+
+You create separate Target Groups when there is a difference in:
+
+✔️ Key decision factors
+
+Different microservices
+
+Different ports (e.g., frontend :80, backend :8080)
+
+Different health check paths
+
+Different scaling behavior
+
+Different routing rules (path/host-based)
+
+Blue-Green / Canary deployments
+
+✔️ Examples
+Scenario	Target Groups
+Monolithic app	1
+Frontend + Backend	2
+3 microservices	3
+Blue-Green deployment	2 per service
+Canary (90/10 traffic)	Separate TGs
+
+📌 Rule of thumb:
+
+One Target Group per independently deployable or scalable component
+```
+
 2. How many target groups are typically configured behind an Application Load Balancer?
+```
+There is no fixed number, but in real projects:
+
+🧠 Typical production numbers
+
+Simple app: 1–2 Target Groups
+
+Microservices: 5–20 Target Groups
+
+Large enterprise: 50+ Target Groups (still behind one ALB)
+
+ALB scales very well — Target Groups are cheap, complexity is the real concern.
+```
 3. Can you explain the end-to-end flow of a user request, starting from accessing an application URL to how the request reaches and interacts with the database?
+```bash
+user -- url -- aplb -- traget group -- front end --- backend -- DB
+```
 4. How would you implement user-specific access control for S3 objects in a production environment?
+```
+This is a very common senior-level question.
+
+✅ Best Practice Architecture
+🔐 Option 1: IAM + Pre-Signed URLs (Most common)
+
+Users authenticate (Cognito / Auth service)
+
+Backend generates pre-signed URL
+
+User accesses only their object
+
+URL expires automatically
+
+✔️ Secure
+✔️ No public access
+✔️ Works well for downloads/uploads
+```
 5. Are you using api gateway in architeccture or alb?
 ```bash
  we are using API Gateway and Application Load Balancer.
 ```
 6. How do you perform Linux server patching in a production environment while minimizing downtime and risk?
+```
+In production, we perform Linux patching using rolling updates, removing one server at a time from the load balancer to avoid downtime.
+We apply security-first patches, reboot only when required, and validate application health before adding the server back.
+Risk is minimized using snapshots or immutable AMI-based deployments with a clear rollback plan.
+```
 7. In your experience, what has been the maximum application downtime, and how was it handled?
 ```bash
 
@@ -87,8 +158,20 @@ and dashboards for visibility.Because no single tool covers logs, metrics, a
 nd visualization end-to-end. Each tool solves a different observability problem.
 ```
 11. what is crontab? how to schedule a job in linux?
+```bash
+Crontab is a Linux scheduler used to run commands or scripts automatically at a specified time or interval (minutes, hours, daily, weekly, etc.).
+```
 12. can you write shell script and python script for automation?
 13. can you install and setup jenkins from the scratch?
 14. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
+```bash
+I identify performance issues by correlating metrics, logs, and traces using monitoring tools like Prometheus, Grafana, and centralized logging to pinpoint bottlenecks.
+Once identified, I resolve them by tuning resources, optimizing application or database queries, and fixing infrastructure constraints.
+To prevent recurrence, I implement alerts, auto-scaling, performance baselines, and continuous monitoring with proactive capacity planning.
+```
 15. Explain s3 storage tiers and lifecycle rules?
-
+```bash
+Amazon S3 offers multiple storage tiers such as Standard, Intelligent-Tiering, Infrequent Access, and Glacier to optimize cost based on access frequency.
+Lifecycle rules automatically move objects between these tiers or delete them after a defined time period.
+This ensures cost optimization, durability, and efficient long-term data management.
+```
