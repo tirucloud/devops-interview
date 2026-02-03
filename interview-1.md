@@ -3,8 +3,10 @@
 
 ### 1. How do you decide the number of target groups to configure for an Application Load Balancer?
 ```
-The number of target groups behind an Application Load Balancer is decided based on application architecture and service separation.
-Each independently deployable or scalable component, such as a microservice, typically gets its own target group.
+The number of target groups behind an Application Load Balancer is decided based on application
+architecture and service separation.
+Each independently deployable or scalable component, such as a microservice,
+typically gets its own target group.
 Different routing rules, ports, or health check requirements also require separate target groups.
 Deployment strategies like blue-green or canary deployments increase the number of target groups.
 There is no fixed limit; the goal is clean isolation, scalability, and safe deployments.
@@ -12,17 +14,10 @@ There is no fixed limit; the goal is clean isolation, scalability, and safe depl
 
 ### 2. How many target groups are typically configured behind an Application Load Balancer?
 ```
-There is no fixed number, but in real projects:
-
-🧠 Typical production numbers
-
-Simple app: 1–2 Target Groups
-
-Microservices: 5–20 Target Groups
-
-Large enterprise: 50+ Target Groups (still behind one ALB)
-
-ALB scales very well — Target Groups are cheap, complexity is the real concern.
+There is no fixed number of target groups behind an Application Load Balancer; it depends on the application design and number of services.
+In practice, small applications use 1–2 target groups, while microservices-based production systems commonly use 5–20 target groups.
+Large enterprise environments can have dozens of target groups behind a single ALB, driven by routing rules and
+deployment strategies like blue-green or canary.
 ```
 ### 3. Can you explain the end-to-end flow of a user request, starting from accessing an application URL to how the request reaches and interacts with the database?
 ```bash
