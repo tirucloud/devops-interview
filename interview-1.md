@@ -30,8 +30,8 @@ user -- url -- alb -- traget group -- front end --- backend -- DB
 ```
 This is a very common senior-level question.
 
-✅ Best Practice Architecture
-🔐 Option 1: IAM + Pre-Signed URLs (Most common)
+Best Practice Architecture
+Option 1: IAM + Pre-Signed URLs (Most common)
 
 Users authenticate (Cognito / Auth service)
 
