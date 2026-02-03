@@ -28,7 +28,8 @@ user -- url -- alb -- traget group -- front end --- backend -- DB
 ```
 ### 4. How would you implement user-specific access control for S3 objects in a production environment?
 ```
-A pre-signed URL is a time-limited, secure URL that grants temporary access to a private S3 object without making the bucket public.
+A pre-signed URL is a time-limited, secure URL that grants temporary access to a private
+S3 object without making the bucket public.
 
 🔹 How it works
 
