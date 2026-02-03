@@ -166,7 +166,8 @@ hours, daily, weekly, etc.).
 ```
 ### 12. can you write shell script and python script for automation?
 ### 13. can you install and setup jenkins from the scratch?
-### 14. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
+### 14. How do you identify application performance issues using monitoring tools, and 
+how do you design solutions to resolve and prevent them?
 ```bash
 I identify performance issues by correlating metrics, logs, and traces using monitoring tools like Prometheus, Grafana,
 and centralized logging to pinpoint bottlenecks.
