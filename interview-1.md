@@ -161,13 +161,15 @@ nd visualization end-to-end. Each tool solves a different observability problem.
 ```
 ### 11. what is crontab? how to schedule a job in linux?
 ```bash
-Crontab is a Linux scheduler used to run commands or scripts automatically at a specified time or interval (minutes, hours, daily, weekly, etc.).
+Crontab is a Linux scheduler used to run commands or scripts automatically at a specified time or interval (minutes,
+hours, daily, weekly, etc.).
 ```
 ### 12. can you write shell script and python script for automation?
 ### 13. can you install and setup jenkins from the scratch?
 ### 14. How do you identify application performance issues using monitoring tools, and how do you design solutions to resolve and prevent them?
 ```bash
-I identify performance issues by correlating metrics, logs, and traces using monitoring tools like Prometheus, Grafana, and centralized logging to pinpoint bottlenecks.
+I identify performance issues by correlating metrics, logs, and traces using monitoring tools like Prometheus, Grafana,
+and centralized logging to pinpoint bottlenecks.
 Once identified, I resolve them by tuning resources, optimizing application or database queries, and fixing infrastructure constraints.
 To prevent recurrence, I implement alerts, auto-scaling, performance baselines, and continuous monitoring with proactive capacity planning.
 ```
