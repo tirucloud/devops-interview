@@ -28,6 +28,33 @@ user -- url -- alb -- traget group -- front end --- backend -- DB
 ```
 ### 4. How would you implement user-specific access control for S3 objects in a production environment?
 ```
+A pre-signed URL is a time-limited, secure URL that grants temporary access to a private S3 object without making the bucket public.
+
+🔹 How it works
+
+Backend (with IAM permissions) generates the URL
+
+URL contains temporary credentials + expiry
+
+User uses the URL to upload/download directly from S3
+
+🔹 Why we use it (production)
+
+No public buckets
+
+No AWS keys on client
+
+Fine-grained, expiring access
+
+Scales well for uploads/downloads
+
+🔹 Common use cases
+
+User-specific file downloads
+
+Secure uploads (UI → S3)
+
+Media access with expiry
 This is a very common senior-level question.
 
 Best Practice Architecture
