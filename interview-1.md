@@ -3,35 +3,11 @@
 
 ### 1. How do you decide the number of target groups to configure for an Application Load Balancer?
 ```
-You don’t decide a number upfront — you decide based on application boundaries.
-
-You create separate Target Groups when there is a difference in:
-
-✔️ Key decision factors
-
-Different microservices
-
-Different ports (e.g., frontend :80, backend :8080)
-
-Different health check paths
-
-Different scaling behavior
-
-Different routing rules (path/host-based)
-
-Blue-Green / Canary deployments
-
-✔️ Examples
-Scenario	Target Groups
-Monolithic app	1
-Frontend + Backend	2
-3 microservices	3
-Blue-Green deployment	2 per service
-Canary (90/10 traffic)	Separate TGs
-
-📌 Rule of thumb:
-
-One Target Group per independently deployable or scalable component
+The number of target groups behind an Application Load Balancer is decided based on application architecture and service separation.
+Each independently deployable or scalable component, such as a microservice, typically gets its own target group.
+Different routing rules, ports, or health check requirements also require separate target groups.
+Deployment strategies like blue-green or canary deployments increase the number of target groups.
+There is no fixed limit; the goal is clean isolation, scalability, and safe deployments.
 ```
 
 ### 2. How many target groups are typically configured behind an Application Load Balancer?
