@@ -1,14 +1,14 @@
-1. can you introduce yoursself?
+1. can you introduce yourself?
 2. on which project are you working currently?
-3. on which tech olgy aare you working?
+3. on which technolgy aare you working?
 4. monolithic vs microservice arch?
-5. what are the cahllenges you faced in the current project?
+5. what are the challenges you faced in the current project?
 6. branching strategy?
-7. prod deplyment happens through main/dev?
-8. main vs master?
+7. where is prod deployment happens through main/dev branch?
+8. main vs master branch?
 9. types of os disro's worked on in linux?
-10. wget vs curl?
-11. awk in linux?
+10. wget vs curl command?
+11. what is awk in linux?
 12. free spcae in linux?
 13. group in linux?
 14. qulaity profile in sonar?
