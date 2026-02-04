@@ -125,6 +125,7 @@ Answer:
 No. The master is required to schedule and manage jobs, so builds will not run.
 
 18. Write a simple Jenkins pipeline.
+```bash
 pipeline {
   agent any
   stages {
@@ -140,7 +141,7 @@ pipeline {
     }
   }
 }
-
+```
 19. If two pipeline stages have the same name, will it cause an issue?
 
 Answer:
@@ -167,6 +168,7 @@ Answer:
 By configuring the CI pipeline to trigger the CD pipeline using downstream jobs or webhooks.
 
 24. Write a simple Ansible playbook.
+```yaml
 - hosts: web
   become: yes
   tasks:
@@ -174,7 +176,7 @@ By configuring the CI pipeline to trigger the CD pipeline using downstream jobs 
       apt:
         name: nginx
         state: present
-
+```
 25. Why do we need passwordless authentication in Ansible?
 
 Answer:
@@ -204,6 +206,7 @@ Answer:
 A Pod is the smallest deployable unit in Kubernetes that can contain one or more containers.
 
 30. Write a Pod manifest file.
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -212,7 +215,7 @@ spec:
   containers:
     - name: nginx
       image: nginx
-
+```
 31. What is a StatefulSet in Kubernetes?
 
 Answer:
